@@ -26,7 +26,7 @@ Each tool in this repository is designed to help you convert SoundCloud content 
 
 ## Web Converter
 
-Need a simpler solution? Visit [scdler.com to convert SoundCloud tracks to MP3](https://scdler.com) using our web interface - no technical knowledge required.
+Need a simpler solution? Visit scdler.com to [convert your favorite music on SoundCloud to MP3](https://scdler.com) using our web interface - no account or signup needed
 
 ## Developer Tools
 
