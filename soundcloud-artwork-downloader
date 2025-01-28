@@ -1,0 +1,37 @@
+import soundcloud
+import requests
+
+# Replace 'YOUR_CLIENT_ID' with your actual SoundCloud API Client ID
+client = soundcloud.Client(client_id='YOUR_CLIENT_ID')
+
+def download_artwork(track_url):
+    try:
+        # Extract track ID from URL, using split or regex for reliability
+        parts = track_url.split('/')
+        track_id = parts[-1]
+        
+        # Get track info
+        track = client.get('/tracks/{}'.format(track_id))
+        
+        # Determine the highest resolution artwork
+        artwork_url = max([artwork.url for artwork in track.artwork_urls], key=lambda x: int(x.split('x')[-1]))
+        
+        # Extract file format from URL
+        file_format = artwork_url.split('.')[-1]
+        filename = f"soundcloud_artwork.{file_format}"
+        
+        # Download the image
+        response = requests.get(artwork_url, timeout=10)
+        response.raise_for_status()
+        
+        with open(filename, 'wb') as f:
+            f.write(response.content)
+            
+        print(f"Artwork saved as {filename}")
+        
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Usage
+track_url = input("Enter the SoundCloud track URL: ")
+download_artwork(track_url)
