@@ -2,7 +2,7 @@
 
 Welcome to the official repository of SCDLer, your comprehensive solution for converting SoundCloud tracks to MP3 format. Our tools provide reliable methods for downloading and converting SoundCloud content to high-quality MP3 files. While these Python tools are available here for developers, you can also use our user-friendly web converter at [scdler.com](https://scdler.com).
 
-## Transform SoundCloud to MP3
+## Convert SoundCloud to MP3
 
 SCDLer specializes in converting SoundCloud tracks to MP3 format, offering both command-line tools and a web-based converter. Our platform provides:
 
