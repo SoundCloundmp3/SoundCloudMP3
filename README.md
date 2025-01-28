@@ -54,9 +54,39 @@ python artwork_downloader.py
 
 3. Enter the SoundCloud track URL when prompted.
 
+# SoundCloud Playlist Downloader
+A Python script that downloads entire SoundCloud playlists using multithreading, no API key required.
 
+## Features
+- Downloads complete playlists with a single URL
+- Multithreaded downloading for faster performance
+- Progress bars for tracking
+- Automatic metadata handling
+- No API key needed
 
-For developers looking to integrate SoundCloud to MP3 conversion capabilities into their projects, our Python tools provide a robust foundation. Each utility is documented and maintained regularly.
+## Installation
+```bash
+pip install requests beautifulsoup4 tqdm
+```
+
+## Usage
+1. Run the script:
+```bash
+python soundcloud_downloader.py
+```
+2. Enter the SoundCloud playlist URL when prompted
+3. Files will be saved in a 'downloads' folder
+
+## Requirements
+- Python 3.6+
+- requests
+- beautifulsoup4
+- tqdm
+
+## Limitations
+- Works with public playlists only
+- Download speed depends on network connection
+
 
 ## Important Notice
 
