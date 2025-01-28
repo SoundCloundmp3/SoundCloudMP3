@@ -30,17 +30,6 @@ Need a simpler solution? Visit scdler.com to [convert your favorite music on Sou
 
 ## Developer Tools
 
-For developers looking to integrate SoundCloud to MP3 conversion capabilities into their projects, our Python tools provide a robust foundation. Each utility is documented and maintained regularly.
-
-## Important Notice
-
-When converting SoundCloud to MP3, please ensure you comply with SoundCloud's terms of service and respect content creators' rights.
-
-## Support
-
-For support with our SoundCloud to MP3 converter tools, please refer to our documentation or visit scdler.com for assistance.
-
-
 ## SoundCloud Artwork Downloader
 
 A simple Python script within the SoundCloud Tools collection that downloads track artwork without requiring an API key.
@@ -65,5 +54,16 @@ python artwork_downloader.py
 
 3. Enter the SoundCloud track URL when prompted.
 
+
+
+For developers looking to integrate SoundCloud to MP3 conversion capabilities into their projects, our Python tools provide a robust foundation. Each utility is documented and maintained regularly.
+
+## Important Notice
+
+When converting SoundCloud to MP3, please ensure you comply with SoundCloud's terms of service and respect content creators' rights.
+
+## Support
+
+For support with our SoundCloud to MP3 converter tools, please refer to our documentation or visit scdler.com for assistance.
 
      
