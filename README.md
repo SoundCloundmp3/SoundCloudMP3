@@ -28,31 +28,40 @@ Each tool in this repository is designed to help you convert SoundCloud content 
 
 Need a simpler solution? Visit scdler.com to [convert your favorite music on SoundCloud to MP3](https://scdler.com) using our web interface - no account or signup needed
 
-## Developer Tools
+## SoundCloud Playlist Downloader
+A Python script that downloads entire SoundCloud playlists using multithreading, no API key required.
+
+## Features
+- Downloads complete playlists with a single URL
+- Multithreaded downloading for faster performance
+- Progress bars for tracking
+- Automatic metadata handling
+- No API key needed
+
+## Installation
+```bash
+pip install requests beautifulsoup4 tqdm
+```
+
+## Usage
+1. Run the script:
+```bash
+python soundcloud_downloader.py
+```
+2. Enter the SoundCloud playlist URL when prompted
+3. Files will be saved in a 'downloads' folder
+
+## Requirements
+- Python 3.6+
+- requests
+- beautifulsoup4
+- tqdm
+
+## Limitations
+- Works with public playlists only
+- Download speed depends on network connectio
 
 ## SoundCloud Artwork Downloader
-
-A simple Python script within the SoundCloud Tools collection that downloads track artwork without requiring an API key.
-
-### Features
-- Downloads artwork directly from any SoundCloud track URL
-- No API key required
-- Supports common image formats (JPG, PNG)
-- Automatic filename generation
-
-### Usage
-
-1. Install dependencies:
-```bash
-pip install requests beautifulsoup4
-```
-
-2. Run the script:
-```bash
-python artwork_downloader.py
-```
-
-3. Enter the SoundCloud track URL when prompted.
 
 # SoundCloud Playlist Downloader
 A Python script that downloads entire SoundCloud playlists using multithreading, no API key required.
@@ -85,14 +94,33 @@ python soundcloud_downloader.py
 
 ## Limitations
 - Works with public playlists only
-- Download speed depends on network connection
+- Download speed depends on network connectio
+
+A simple Python script within the SoundCloud Tools collection that downloads track artwork without requiring an API key.
+
+### Features
+- Downloads artwork directly from any SoundCloud track URL
+- No API key required
+- Supports common image formats (JPG, PNG)
+- Automatic filename generation
+
+### Usage
+
+1. Install dependencies:
+```bash
+pip install requests beautifulsoup4
+```
+
+2. Run the script:
+```bash
+python artwork_downloader.py
+```
+
+3. Enter the SoundCloud track URL when prompted.
 
 
-## Important Notice
 
-When converting SoundCloud to MP3, please ensure you comply with SoundCloud's terms of service and respect content creators' rights.
 
-## Support
 
 For support with our SoundCloud to MP3 converter tools, please refer to our documentation or visit scdler.com for assistance.
 
